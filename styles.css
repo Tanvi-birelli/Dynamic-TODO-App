@@ -1,0 +1,116 @@
+/* Global settings */
+*{
+    padding:0;
+    margin:0;
+}
+body{
+    background-color: #bf79bf;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+#logo{
+    width:32px;
+    height:32px;
+}
+#container{
+    background-color: #ffffffe9;
+    padding: 2rem;
+    border-radius:5px ;
+    transition: filter 0.3s;
+}
+header{
+    text-align: center;
+    padding-bottom: 0.5rem;
+    border-bottom: solid 2px #bf79bf;
+}
+#task-wrapper{
+    margin: 0.5rem 0;
+    padding: 1rem 0;
+}
+#task-input-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    
+}
+#task-input{
+    font-size: 1.1rem;
+    background: transparent;
+    height: 20px;
+    padding: 0.5rem 0;
+    border: none;
+    border-bottom: solid 2px rgb(146, 141, 141);
+    width: 250px;
+    outline: none;
+}
+#add-btn{
+    font-size: 1.1rem;
+    width: 100px;
+    border-radius: 10px;
+    border: none;
+    padding: 0.5rem;
+    background-color: #24a0ed;
+    color: #fff;
+    cursor:pointer;
+    
+}
+#add-btn:hover{
+    transform: translate(0,-2px);
+    transition: 0.1s;
+    background-color: #1293e4;
+}
+#task-input:focus{
+    border-bottom: solid 2px #24a0ed;
+}
+#tasks-container{
+    margin: 1rem 0;
+}
+.task{
+    margin-right: 1rem;
+    transform: scale(1.5)
+}
+.task-label{
+    margin: 0.5rem 0;
+    padding: 0;
+}
+#error-container{
+    color: red;
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 5px;
+    animation: popup 1s ease;
+}
+@keyframes popup {
+    from{
+        transform:translateY(-300px);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+.task-container{
+    height: 40px;
+    display: flex;
+   justify-content: space-between;
+}
+.dlt-btn{
+    width:3rem;
+    height: 2rem;
+    margin-top:0.1rem;
+    background: transparent;
+    color: #24a0ed;
+    border:solid 1px #1293e4;
+    border-radius:3px;
+    cursor: pointer;
+}
+
+.strikethrough {
+    text-decoration: line-through;
+}
